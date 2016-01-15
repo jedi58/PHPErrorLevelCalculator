@@ -1,3 +1,5 @@
+<?php
+
 class ErrorLevelCalculator {
 	protected static $levels = array(
 		'E_ALL', 'E_ERROR', 'E_WARNING', 'E_PARSE', 'E_NOTICE', 'E_CORE_ERROR', 
