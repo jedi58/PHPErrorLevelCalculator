@@ -13,7 +13,7 @@ class PHPErrorLevelCalculatorTest extends PHPUnit_Framework_TestCase
     
     public function testSingleErrorStringToCode()
     {
-        $this->assertEquals(ErrorLevelCalculator::toCode(32767), 'E_ALL');
+        $this->assertEquals(ErrorLevelCalculator::toString(32767), 'E_ALL');
     }
     
     public function testStringAllNoWarnings()
