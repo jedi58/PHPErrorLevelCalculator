@@ -2,8 +2,6 @@
 /**
  * @group unit
  */
-use PHPErrorLevelCalculator;
-
 class PHPErrorLevelCalculatorTest extends PHPUnit_Framework_TestCase
 {
     public function testSingleErrorCodeToString()
