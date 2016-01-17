@@ -6,7 +6,7 @@ class ErrorLevelCalculator {
         'E_CORE_WARNING', 'E_COMPILE_ERROR', 'E_COMPILE_WARNING', 'E_STRICT',
         'E_USER_ERROR', 'E_USER_WARNING', 'E_USER_NOTICE'
     );
-    public function toString($value)
+    public static function toString($value)
     {
         $output = array();
         $seperator = ' | ';
@@ -24,7 +24,7 @@ class ErrorLevelCalculator {
         return implode($seperator, $output);
     }
 
-    public function toCode($value)
+    public static function toCode($value)
     {
         $levels = preg_split('(\||\&)', str_replace('~', '', $value));
         $output = 0;
