@@ -1,4 +1,27 @@
 # PHPErrorLevelCalculator
-Code for converting between strings and integers for PHP error levels
+Class for converting PHP constants for error levels from integers to strings and vice-versa.
 
-More details coming soon
+Examples:
+```php
+ErrorLevelCalculator::toString(32767);
+```
+This will return the string `E_ALL`. It is also possible to construct more complicated examples such as:
+
+```php
+ErrorLevelCalculator::toString(32765);
+```
+This will return `E_ALL & ~E_WARNING`. In addition to this, they can be built as:
+
+```php
+ErrorLevelCalculator::toString(3);
+```
+This would return `E_ERROR | E_WARNING`.
+
+
+The opposite of this is also true, the following:
+
+```php
+ErrorLevelCalculator::toCode('E_ERROR | E_WARNING');
+```
+
+Would return `3`.
