@@ -1,7 +1,9 @@
 # PHPErrorLevelCalculator
 Class for converting PHP constants for error levels from integers to strings and vice-versa.
 
-Examples:
+[![Build Status](https://travis-ci.org/jedi58/PHPErrorLevelCalculator.svg?branch=master)](https://travis-ci.org/jedi58/PHPErrorLevelCalculator)
+
+## Examples
 ```php
 ErrorLevelCalculator::toString(32767);
 ```
