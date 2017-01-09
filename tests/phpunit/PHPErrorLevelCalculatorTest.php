@@ -26,7 +26,10 @@ class PHPErrorLevelCalculatorTest extends PHPUnit_Framework_TestCase
     
     public function testCodeAllNoNoticesNoStrict()
     {
-        $this->assertEquals(ErrorLevelCalculator::toString(6135), 'E_ALL & ~E_NOTICE & ~E_STRICT');
+        $this->assertEquals(
+            ErrorLevelCalculator::toString(6135),
+            'E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED & ~E_USER_DEPRECATED'
+        );
     }
     
     public function testCodeAllNoWarnings()
