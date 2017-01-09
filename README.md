@@ -2,6 +2,7 @@
 Class for converting PHP constants for error levels from integers to strings and vice-versa.
 
 [![Build Status](https://travis-ci.org/jedi58/PHPErrorLevelCalculator.svg?branch=master)](https://travis-ci.org/jedi58/PHPErrorLevelCalculator)
+[![Code Climate](https://codeclimate.com/github/jedi58/PHPErrorLevelCalculator/badges/gpa.svg)](https://codeclimate.com/github/jedi58/PHPErrorLevelCalculator)
 
 ## Examples
 ```php
