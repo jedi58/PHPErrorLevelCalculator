@@ -1,0 +1,20 @@
+{
+    "name": "jedi58/PHPErrorLevelCalculator",
+    "type": "library",
+    "description": "Code for converting between strings and integers for PHP error levels Edit",
+    "keywords": ["error", "php"],
+    "homepage": "https://github.com/jedi58/PHPErrorLevelCalculator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David G. Paul"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "symfony/console": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
