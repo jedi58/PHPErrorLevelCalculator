@@ -11,7 +11,7 @@ class ErrorLevelCalculator {
     {
         $output = array();
         $seperator = ' | ';
-        if ($value > 2048) {
+        if ($value > 16384) {
             $output[] = 'E_ALL';
             $seperator = ' & ~';
             $value = E_ALL - $value;
@@ -31,7 +31,7 @@ class ErrorLevelCalculator {
         $output = 0;
         foreach ($levels as $level) {
             $level = trim($level);
-            if ((!empty($level) && $level == 'E_ALL') || $output < 2048) {
+            if ((!empty($level) && $level == 'E_ALL') || $output < 16384) {
                 $output += (int) constant($level);
             } else {
                 $output &= ~(int) constant($level);
