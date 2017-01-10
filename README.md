@@ -3,6 +3,7 @@ Class for converting PHP constants for error levels from integers to strings and
 
 [![Build Status](https://travis-ci.org/jedi58/PHPErrorLevelCalculator.svg?branch=master)](https://travis-ci.org/jedi58/PHPErrorLevelCalculator)
 [![Code Climate](https://codeclimate.com/github/jedi58/PHPErrorLevelCalculator/badges/gpa.svg)](https://codeclimate.com/github/jedi58/PHPErrorLevelCalculator)
+[![Coverage Status](https://coveralls.io/repos/github/jedi58/PHPErrorLevelCalculator/badge.svg?branch=master)](https://coveralls.io/github/jedi58/PHPErrorLevelCalculator?branch=master)
 
 ## Examples
 ```php
